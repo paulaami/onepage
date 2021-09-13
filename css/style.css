@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Quentin";
-  src: url("/fonts/Quentin.otf") format("truetype"), url("/fonts/quentin.woff2") format("woff2"), url("/fonts/quentin.woff") format("woff");
+  src: url("../fonts/Quentin.otf") format("truetype"), url("../fonts/quentin.woff2") format("woff2"), url("../fonts/quentin.woff") format("woff");
 }
 
 * {
@@ -43,7 +43,7 @@ ul {
   position: relative;
   width: 100%;
   height: 40vh;
-  background-image: url(/img/image0.jpeg);
+  background-image: url(../img/image0.jpeg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -216,7 +216,7 @@ ul {
 .section__menu {
   position: relative;
   padding: 50px 0;
-  background-image: url(/img/pexels-alesia-kozik-6016762.jpg);
+  background-image: url(../img/pexels-alesia-kozik-6016762.jpg);
   background-position: center;
   background-size: cover;
   z-index: 0;
