@@ -1,0 +1,75 @@
+@media screen and (min-width:768px) {
+ .header__logo {
+  &-text {
+   font-size: 4.2rem;
+  }
+ }
+
+ .main__section {
+
+  &-box {
+   top: -45px;
+   padding: 40px;
+  }
+ }
+
+ .form__section-container {
+  display: flex;
+
+  &-photobox {
+   width: 360px;
+   height: 460px;
+   left: 30px;
+   transform: translateX(0);
+   border: 6px solid #fff;
+  }
+  &-signup {
+   position: relative;
+   top: 82px;
+   left: 20px;
+   max-width: 390px;
+   padding: 0 50px;
+  }
+ }
+
+ .section__about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-container {
+   flex-direction: row;
+   justify-content: space-between;
+   width: 650px;
+   &-photo {
+    width: 340px;
+    height: 420px;
+    margin-bottom: 0;
+   }
+
+   &-text {
+    h2 {
+     position: relative;
+     left: -10%;
+     width: 130%;
+    }
+   }
+  }
+
+ }
+
+
+ .opinion__section {
+  &-container {
+    width: 85vw;
+  }
+
+  .slick-prev {
+    left: -40px;
+  }
+
+  .slick-next {
+    right: -40px;
+  }
+}
+
+}

@@ -1,0 +1,20 @@
+@media screen and (min-width:992px) {
+
+ .opinion__section {
+  &-container {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 60px;
+    max-width: 1000px;
+  }
+ 
+  .slick-prev {
+    left: 0;
+  }
+ 
+  .slick-next {
+    right: 0px;
+  }
+ }
+
+}

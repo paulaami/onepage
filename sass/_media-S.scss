@@ -1,0 +1,77 @@
+@media screen and (min-width:375px) {
+
+
+.header__logo {
+ &-text {
+  font-size: 3.5rem;
+ }
+}
+
+ .main__section {
+  padding-bottom: 80px;
+ }
+
+ .main__section-box {
+  svg {
+   width: 80px;
+  }
+ }
+
+ .form__section {
+  padding-bottom: 80px;
+
+  &-container {
+   &-photobox {
+    width: 320px;
+    height: 320px;
+   }
+
+   &-signup {
+    padding: 0 40px;
+   }
+  }
+ }
+
+ .section__menu {
+  padding: 80px 0;
+  &-container {
+   &-photo {
+    margin-top: 30px;
+    width: 320px;
+    height: 320px;
+   }
+  }
+ }
+
+ .opinion__section {
+  .slick-prev {
+    left: -25px;
+  }
+
+  .slick-next {
+    right: -25px;
+  }
+
+  &-container {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 30px 25px;
+  }
+
+  &-box {
+    &-photo {
+      width: 180px;
+      height: 180px;
+    }
+
+    &-text {
+      font-size: 1.5rem;
+    }
+
+    &-signature {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+}
