@@ -219,6 +219,7 @@ ul {
   background-image: url(../img/pexels-alesia-kozik-6016762.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
