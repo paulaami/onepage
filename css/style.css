@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Quentin";
-  src: url("../fonts/Quentin.otf") format("truetype"), url("../fonts/quentin.woff2") format("woff2"), url("../fonts/quentin.woff") format("woff");
+  src: url("/fonts/Quentin.otf") format("truetype"), url("/fonts/quentin.woff2") format("woff2"), url("/fonts/quentin.woff") format("woff");
 }
 
 * {
@@ -26,6 +26,27 @@ a {
   color: #2d2d2b;
 }
 
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .1rem;
+  font-weight: 500;
+}
+
+.small-uppercase-style {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.small-lowercase-style {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  line-height: 1.7;
+}
+
 ul {
   list-style-type: none;
 }
@@ -43,7 +64,7 @@ ul {
   position: relative;
   width: 100%;
   height: 40vh;
-  background-image: url("../img/image0.jpeg");
+  background-image: url(/img/image0.jpeg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -69,6 +90,10 @@ ul {
   background-color: #EAE5E1;
 }
 
+.main__section-flower {
+  display: none;
+}
+
 .main__section-box {
   position: relative;
   top: -40px;
@@ -79,36 +104,29 @@ ul {
   background-color: #fff;
 }
 
-.main__section-box h3,
+.main__section-box h2,
 .main__section-box p {
   margin-bottom: 20px;
   text-align-last: left;
 }
 
-.main__section-box-heading {
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  font-weight: 500;
-}
-
-.main__section-box p:first-of-type {
+.main__section-box-title {
   position: relative;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
   margin-bottom: 30px;
 }
 
-.main__section-box p:first-of-type::after {
+.main__section-box-title::after {
   position: absolute;
   content: '';
   left: 0;
   bottom: -15px;
-  height: 1px;
+  height: 1.7px;
   width: 70px;
-  background-color: #d4c7be;
+  background-color: #d8c7aa;
 }
 
 .main__section-box p:nth-of-type(2) {
+  padding-top: 7px;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -133,22 +151,42 @@ ul {
 
 /*FORM SECTION*/
 .form__section {
-  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EAE5E1;
+  padding-bottom: 70px;
 }
 
 .form__section-container {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
 .form__section-container-photobox {
   position: relative;
-  top: -40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   width: 260px;
   height: 260px;
   overflow: hidden;
+  border: 1px solid #2d2d2b;
 }
 
 .form__section-container-photobox-img {
@@ -161,30 +199,21 @@ ul {
 }
 
 .form__section-container-signup {
+  margin-top: 60px;
   padding: 0 20px;
   text-align: center;
 }
 
-.form__section-container-signup h3 {
+.form__section-container-signup p:first-of-type {
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  letter-spacing: .2rem;
-  font-weight: 500;
 }
 
-.form__section-container-signup p:first-of-type {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
-  letter-spacing: .1rem;
-  font-weight: 500;
+.form__section-container-signup h2 {
   margin-bottom: 20px;
 }
 
 .form__section-container-signup p:last-of-type {
   padding: 0 20px;
-  font-weight: 300;
-  line-height: 1.8;
   margin-bottom: 20px;
 }
 
@@ -199,10 +228,10 @@ ul {
   margin: 0 auto;
   padding: 15px 45px;
   color: #fff;
-  background-color: #2D2D2B;
+  background-color: #2d2d2b;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 1.2rem;
   letter-spacing: .2rem;
 }
 
@@ -215,8 +244,8 @@ ul {
 /*SECTION MENU*/
 .section__menu {
   position: relative;
-  padding: 50px 0;
-  background-image: url("../img/pexels-alesia-kozik-6016762.jpg");
+  padding: 70px 0px;
+  background-image: url(/img/pexels-alesia-kozik-6016762.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -238,18 +267,6 @@ ul {
 
 .section__menu-text {
   margin-bottom: 20px;
-  letter-spacing: .2rem;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.section__menu-heading {
-  text-align: center;
-  font-size: 2.6rem;
-  letter-spacing: .1rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
 }
 
 .section__menu-container {
@@ -266,31 +283,30 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 40px;
   width: 90vw;
   max-width: 360px;
-  padding: 20px;
   background-color: #D4C7BEde;
 }
 
+.section__menu-container h2 {
+  text-align: center;
+}
+
 .section__menu-container-list {
-  margin: 40px auto;
+  margin: 10px auto;
 }
 
 .section__menu-container-list li {
   position: relative;
-  margin-top: 10px;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  line-height: 1.8;
-  font-weight: 500;
+  margin-top: 20px;
 }
 
 .section__menu-container-list li::before {
   position: absolute;
   content: '';
   height: 1px;
-  bottom: -3px;
+  bottom: -6px;
   width: 100%;
   background-color: #D4C7BE;
 }
@@ -298,7 +314,7 @@ ul {
 /*SECTION ABOUT*/
 .section__about {
   position: relative;
-  padding: 60px 0;
+  padding: 70px 0;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
@@ -321,15 +337,16 @@ ul {
 }
 
 .section__about-container-photo {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   overflow: hidden;
   margin-bottom: 30px;
+  border: 1px solid #2d2d2b;
 }
 
 .section__about-container-photo img {
   position: relative;
-  top: -10%;
+  top: -20%;
   width: 100%;
   height: auto;
   -o-object-fit: fill;
@@ -353,7 +370,7 @@ ul {
 .section__about-container-text h3,
 .section__about-container-text p:first-of-type {
   font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: .1rem;
 }
@@ -361,22 +378,18 @@ ul {
 .section__about-container-text p:last-of-type {
   margin-top: 30px;
   padding: 0 15px;
-  letter-spacing: .1rem;
-  line-height: 1.5;
-  font-weight: 300;
   text-align: justify;
 }
 
 .section__about-container-text a {
   display: block;
   margin-top: 30px;
-  text-transform: uppercase;
 }
 
 /*OPINION SECTION*/
 .opinion__section {
   background-color: #fff;
-  padding: 50px 0;
+  padding: 0 0 60px 0;
 }
 
 .opinion__section-header {
@@ -389,21 +402,11 @@ ul {
 }
 
 .opinion__section-header img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  position: absolute;
-  top: 330px;
-  right: 0px;
-  width: 180px;
-  height: 180px;
-  z-index: 100;
+  display: none;
 }
 
 .opinion__section-header h2 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .opinion__section-header p {
@@ -478,15 +481,13 @@ ul {
 
 .opinion__section-box-text {
   text-align: center;
-  font-size: 1.4rem;
-  line-height: 1.5em;
   margin: 30px auto;
 }
 
 .opinion__section-box-signature {
   text-align: right;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 /* SOCIAL SECTION */
@@ -507,7 +508,7 @@ ul {
 
 .section__social a {
   display: block;
-  color: #2D2D2B;
+  color: #2d2d2b;
 }
 
 .section__social-container-link {
@@ -607,6 +608,7 @@ ul {
 .footer__container-text {
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 375px) {
@@ -634,6 +636,10 @@ ul {
   }
   .section__menu-container-photo {
     margin-top: 30px;
+    width: 320px;
+    height: 320px;
+  }
+  .section__about-container-photo {
     width: 320px;
     height: 320px;
   }
@@ -666,25 +672,34 @@ ul {
   }
   .main__section-box {
     top: -45px;
-    padding: 40px;
+    padding: 80px;
+    max-width: 520px;
+  }
+  .main__section-box svg {
+    width: 100px;
+    bottom: -60px;
   }
   .form__section-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
   }
   .form__section-container-photobox {
-    width: 360px;
+    width: 350px;
     height: 460px;
-    left: 30px;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    border: 6px solid #fff;
   }
   .form__section-container-signup {
     position: relative;
-    top: 82px;
-    left: 20px;
+    margin-top: 0;
     max-width: 390px;
     padding: 0 50px;
   }
@@ -714,10 +729,24 @@ ul {
     height: 420px;
     margin-bottom: 0;
   }
+  .section__about-container-photo img {
+    top: -5%;
+  }
   .section__about-container-text h2 {
     position: relative;
     left: -10%;
     width: 130%;
+  }
+  .opinion__section-header img {
+    display: block;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    position: absolute;
+    top: 100px;
+    right: -15px;
+    width: 190px;
+    height: 190px;
+    z-index: 100;
   }
   .opinion__section-container {
     width: 85vw;
@@ -731,20 +760,21 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
-  .form__section-container {
-    padding: 40px 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .header__logo {
+    height: 60vh;
   }
-  .form__section-container-photobox {
-    top: 30px;
+  .header__logo-text {
+    line-height: 60vh;
   }
-  .form__section-container-signup {
-    top: 30px;
+  .main__section-flower {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    display: block;
+    width: 300px;
+    z-index: 10;
+    -webkit-filter: invert(33%) sepia(5%) saturate(58%) hue-rotate(21deg) brightness(96%) contrast(92%);
+            filter: invert(33%) sepia(5%) saturate(58%) hue-rotate(21deg) brightness(96%) contrast(92%);
   }
   .opinion__section-container {
     -webkit-box-orient: horizontal;
