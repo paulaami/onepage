@@ -245,7 +245,7 @@ ul {
 .section__menu {
   position: relative;
   padding: 70px 0px;
-  background-image: url(/img/pexels-alesia-kozik-6016762.jpg);
+  background-image: url("../img/pexels-alesia-kozik-6016762.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
