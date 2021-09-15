@@ -27,6 +27,12 @@ body {
 a {
   text-decoration: none;
   color: #2d2d2b;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+a:hover {
+  color: #995C41;
 }
 
 h2 {
@@ -38,7 +44,7 @@ h2 {
 
 .small-uppercase-style {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
@@ -132,9 +138,9 @@ ul {
   content: "";
   left: 0;
   bottom: -15px;
-  height: 1.7px;
-  width: 70px;
-  background-color: #d8c7aa;
+  height: 1px;
+  width: 60px;
+  background-color: #c59a88;
 }
 
 .main__section-box p:nth-of-type(2) {
@@ -147,6 +153,14 @@ ul {
   font-size: 2.4rem;
   letter-spacing: 0.2rem;
   font-family: "Quentin";
+}
+
+.main__section-box-start {
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #995C41;
 }
 
 .main__section-box svg {
@@ -192,20 +206,60 @@ ul {
 }
 
 .form__section-container-photobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
+  padding: 5px 3px;
   width: 260px;
   height: 260px;
   overflow: hidden;
+}
+
+.form__section-container .calendar {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.form__section-container .calendar::after {
+  position: absolute;
+  content: '';
+  top: -3px;
+  left: 3px;
+  bottom: 3px;
+  right: -3px;
   border: 1px solid #2d2d2b;
 }
 
-.form__section-container-photobox-img {
-  position: relative;
-  top: -50px;
-  width: 100%;
-  height: auto;
-  -o-object-fit: fill;
-     object-fit: fill;
+.form__section-container .calendar h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.form__section-container .calendar .small-uppercase-style {
+  margin-bottom: 10px;
+}
+
+.form__section-container .calendar img {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.form__section-container .calendar span {
+  font-weight: 500;
+  font-style: italic;
 }
 
 .form__section-container-signup {
@@ -743,7 +797,7 @@ ul {
   }
   .form__section-container-photobox {
     width: 350px;
-    height: 460px;
+    height: 480px;
   }
   .form__section-container-signup {
     position: relative;
