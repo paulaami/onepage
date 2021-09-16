@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -34,7 +34,9 @@
         </p>
         <h2 class="main__section-box-title">Dołącz do bezpłatnego miesięcznego wyzwania! </h2>
         <p class="small-lowercase-style">
-          Jeśli chcesz wziąć udział w treningach live na darmowej platformie zoom - zapisz się poniżej, podając swojego maila.
+          Jeśli chcesz wziąć udział w bezpłatnych treningach live na darmowej platformie zoom - wypełnij <a
+            href="#form">poniższy formularz</a>, podając swoje imię oraz adres
+          email.
         </p>
         <h3 class="main__section-box-start">Startujemy 05 października</h3>
         <p>Do zobaczenia na macie!</p>
@@ -49,22 +51,28 @@
 
   <section class="form__section">
     <div class="form__section-container">
-      <div class="form__section-container-photobox" data-aos="fade" data-aos-delay="500" data-aos-duration="1000">
-        <div class="form__section-container-photobox-one calendar">
+      <div class="form__section-container-photobox">
+        <div class="form__section-container-photobox-one calendar" data-aos="fade" data-aos-delay="500"
+          data-aos-duration="1000">
           <h3>Wtorki godz 19.00</h3>
           <p class="small-uppercase-style">Wzmacnianie</p>
-          <img src="./svg/three-stars.svg" alt="">
-          <p class="small-lowercase-style">Trening o <span>średniej intensywności</span> mający na celu poprawę postawy ciała po przez wzmocnienie poszczególnych partii mięśni a przy okazji spaleniu trochę kalorii.</p>
+          <img class="rating-stars" src="./svg/three-stars.svg" alt="">
+          <p class="small-lowercase-style">Trening o <span>średniej intensywności</span> mający na celu poprawę postawy
+            ciała po przez wzmocnienie poszczególnych partii mięśni a przy okazji spaleniu trochę kalorii.</p>
+          <p class="training-time"><img src="/svg/clock.svg" alt=""> 50'</p>
         </div>
-        <div class="form__section-container-photobox-two calendar">
+        <div class="form__section-container-photobox-two calendar" data-aos="fade" data-aos-delay="600"
+          data-aos-duration="1000">
           <h3>Czwartki godz 19.00</h3>
           <p class="small-uppercase-style">Zdrowy kręgosłup</p>
-          <img src="./svg/two-stars.svg" alt="">
-          <p class="small-lowercase-style">Trening o <span>niskiej intensywności.</span> Rozruch dla kręgosłupa i bioder. Idealny po całym dniu w pracy oraz jako dodatek do treningów wzmacniających.</p>
+          <img class="rating-stars" src="./svg/two-stars.svg" alt="">
+          <p class="small-lowercase-style">Trening o <span>niskiej intensywności.</span> Rozruch dla kręgosłupa i
+            bioder. Idealny po całym dniu w pracy oraz jako dodatek do treningów wzmacniających.</p>
+          <p class="training-time"><img src="/svg/clock.svg" alt=""> 40'</p>
         </div>
       </div>
 
-      <div class="form__section-container-signup">
+      <div id="form" class="form__section-container-signup">
         <p class="small-uppercase-style">zapisy</p>
         <h2>Wypełnij formularz</h2>
         <p class="small-lowercase-style">
@@ -106,18 +114,19 @@
   <section class="section__about">
     <div class="section__about-shadow section-shadow"></div>
     <div class="section__about-container">
-      <div class="section__about-container-photo" id="slider">
-        <img src="./img/image3.jpg" alt="" />
-        <img src="./img/image2.jpg" alt="" />
+      <div class="section__about-container-photo" id="slider" data-aos="fade" data-aos-delay="500"
+        data-aos-duration="1000">
+        <img src="./img/karo-trening-M.jpg" alt="" />
+        <img src="./img/karolina-trening-M.jpg" alt="" />
       </div>
 
-      <div class="section__about-container-text" data-aos="fade" data-aos-delay="500" data-aos-duration="1000">
+      <div class="section__about-container-text" data-aos="fade" data-aos-delay="700" data-aos-duration="1000">
         <h2>Zanim przejedziemy dalej...</h2>
         <h3>Witajcie!</h3>
         <p>Jestem Karolina.</p>
         <p class="small-lowercase-style">
           Prowadzę treningi dla kobiet. Moim celem jest, abyś wsłuchała się i
-          poznała potrzeby własnego ciała.
+          poznała potrzeby własnego ciała. Zwolnij, odetchnij i daj sobie szanse na lepsze jutro…
         </p>
         <a class="small-uppercase-style" href="https://karolinaszymkowicz.pl/o-mnie/"> O mnie &#8594;</a>
       </div>
@@ -127,54 +136,56 @@
   <section class="opinion__section">
     <div class="opinion__section-header">
       <h2 class="small-uppercase-style">opinie o moich treningach</h2>
-      <p>Okiem Podopiecznych</p>
+      <p data-aos="fade" data-aos-delay="600" data-aos-duration="1000">Okiem Podopiecznych</p>
       <img src="./img/flower3.png" alt="" />
     </div>
 
-    <div class="opinion__section-container carousel">
+    <div class="opinion__section-container carousel" data-aos="fade" data-aos-delay="700" data-aos-duration="1000">
       <div class="opinion__section-box">
         <div class="opinion__section-box-photo">
           <img class="opinion__section-box-img" src="./img/KarolinaS.jpg" alt="Zdjęcie podopiecznej Karoliny S." />
         </div>
         <p class="opinion__section-box-text small-lowercase-style">
-          "Trenuje z Karolina od pewnego czasu i dopiero dzięki jej treningom zrozumiałam jak poprawnie wykonywać ćwiczenia, że treningi cardio to nie wszystko. Nauczyłam
-się jak ważne jest wzmacnianie ciała. Karolina to bardzo profesjonalny trener ( wiem co mowie, kilku miałam) wie w jakim momencie i jak przekazać informacje, że ćwiczenie jest zle wykonywane. Jest bardzo wyrozumiała, nie pośpiesza. Jeżeli widzi, że dane ćwiczenie sprawia trudność umie go tak wkomponować w trening, że nie jest już tak trudne jak na początku. Treningi Karoliny to nie tylko ciężary ( ich tez nie brakuje) ale także mobilność, o której całkowicie zapominamy. Dodatkowo na profilu Karoliny jest baardzo dużo wiedzy teoretycznej, której tak łatwo nie znajdzie się na innych profilach."
+          "Trenuje z Karolina od pewnego czasu i dopiero dzięki jej treningom zrozumiałam jak poprawnie wykonywać
+          ćwiczenia, że treningi cardio to nie wszystko. Nauczyłam
+          się jak ważne jest wzmacnianie ciała. Karolina to bardzo profesjonalny trener ( wiem co mowie, kilku miałam)
+          wie w jakim momencie i jak przekazać informacje, że ćwiczenie jest zle wykonywane. Jest bardzo wyrozumiała,
+          nie pośpiesza. Jeżeli widzi, że dane ćwiczenie sprawia trudność umie go tak wkomponować w trening, że nie jest
+          już tak trudne jak na początku. Treningi Karoliny to nie tylko ciężary ( ich tez nie brakuje) ale także
+          mobilność, o której całkowicie zapominamy. Dodatkowo na profilu Karoliny jest baardzo dużo wiedzy
+          teoretycznej, której tak łatwo nie znajdzie się na innych profilach."
         </p>
         <p class="opinion__section-box-signature">Karolina S.</p>
       </div>
 
       <div class="opinion__section-box">
         <div class="opinion__section-box-photo">
-          <img class="opinion__section-box-img" src="./img/ZosiaK.jpg" alt="Zdjęcie podopiecznej Zosi K." />
+          <img class="opinion__section-box-img" src="./img/AnnaK-profile.jpg" alt="Zdjęcie podopiecznej Anny K." />
         </div>
         <p class="opinion__section-box-text small-lowercase-style">
-          "Polecam treningi z Karoliną. Przede wszystkim jej ogromne
-          zaangażowanie i precyzja w każdym ćwiczeniu. Kontrolowany i
-          bezpieczny ruch - moje ciało to uwielbia. Warto zacząć trenować z
-          Karoliną. Po dwóch miesiącach widzę ogromną zmianę w zakresie ruchu,
-          kondycji. Ciało staje się napięte, kręgosłup przestał doskwierać.
-          Polecam zrobić coś dla ciała i umysłu. Karolina - dla mnie najlepsza
-          trenerka! Zapisz się na trening - nie pożałujesz."
+          "Od niedawna trenuję z Karoliną, a już widzę poprawę, wzmocnienie i stabilizację w ciele. Skuteczność Karoliny
+          wynika z tego, że posiada konkretną wiedzę o układzie ruchu, a nie działa w ciemno. Poczucie humoru i
+          dostosowanie intensywności ćwiczeń indywidualnie sprawia, że trenuje się z przyjemnością! Nawet jak się mega
+          nie chce, to po treningu wraca energia. Polecam najmocniej!"
         </p>
-        <p class="opinion__section-box-signature">Zosia K.</p>
+        <p class="opinion__section-box-signature">Anna K.</p>
       </div>
 
       <div class="opinion__section-box">
         <div class="opinion__section-box-photo photo-three">
-          <img class="opinion__section-box-img" src="./img/PaulinaR.jpg" alt="Zdjęcie podopiecznej Pauliny R." />
+          <img class="opinion__section-box-img" src="./img/MartaP-profile.jpg" alt="Zdjęcie podopiecznej Marty P." />
         </div>
         <p class="opinion__section-box-text small-lowercase-style">
-          "Przez bardzo długi czas nie mogłam wyrobić sobie nawyku regularnego
-          ćwiczenia. Przyszła pandemia a co za tym idzie, jeszcze więcej czasu
-          spędzałam siedząc. Zawsze gdy miałam przypływ chęci aby zacząć coś
-          robić zabierałam się do tego w nieodpowiedni sposób przez co
-          zazwyczaj po 2-3 próbach chęci gdzieś uciekały.. Karolina namówiła
-          mnie na ćwiczenia i tak się zaczęło. Wypytała o wszystko i dobrała
-          trening do mojego trybu życia i pracy jaką wykonuję. Dziś mija pół
-          roku odkąd ćwiczymy razem. Karolina zaraziła mnie chęcią do
-          ćwiczeń!"
+          "Trenuje z Karolina od pewnego czasu i dopiero dzięki jej treningom zrozumiałam jak poprawnie wykonywać
+          ćwiczenia, że treningi cardio to nie wszystko. Nauczyłam
+          się jak ważne jest wzmacnianie ciała. Karolina to bardzo profesjonalny trener ( wiem co mowie, kilku miałam)
+          wie w jakim momencie i jak przekazać informacje, że ćwiczenie jest zle wykonywane. Jest bardzo wyrozumiała,
+          nie pośpiesza. Jeżeli widzi, że dane ćwiczenie sprawia trudność umie go tak wkomponować w trening, że nie jest
+          już tak trudne jak na początku. Treningi Karoliny to nie tylko ciężary ( ich tez nie brakuje) ale także
+          mobilność, o której całkowicie zapominamy. Dodatkowo na profilu Karoliny jest baardzo dużo wiedzy
+          teoretycznej, której tak łatwo nie znajdzie się na innych profilach."
         </p>
-        <p class="opinion__section-box-signature">Paulina R.</p>
+        <p class="opinion__section-box-signature">Marta P.</p>
       </div>
     </div>
   </section>
@@ -184,7 +195,8 @@ się jak ważne jest wzmacnianie ciała. Karolina to bardzo profesjonalny trener
     <div class="section__social-container" data-aos="fade" data-aos-delay="500" data-aos-duration="1000">
       <h3>Znajdziesz Mnie Tutaj:</h3>
       <div class="section__social-container-list">
-        <a class="small-uppercase-style" href="https://www.instagram.com/karolina_trenerka/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <a class="small-uppercase-style" href="https://www.instagram.com/karolina_trenerka/"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <circle cx="256" cy="255.833" r="80"></circle>
             <path
               d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
